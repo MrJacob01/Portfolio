@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0e0e10;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Top Bar Social Icons */
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.social-links a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  position: relative;
+  
+}
+.social-links a:hover {
+  color: #00d1ff;
+}
+
+/* Container Layout */
+.container {
+  margin-top: 80px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+/* Flex Card */
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  margin-top: 40px;
+}
+
+.card-left img {
+  width: 150px;
+  border-radius: 100px;
+  border: 3px solid #00d1ff;
+}
+
+.card-right h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #00d1ff;
+  margin: 10px 0;
+}
+
+.bio {
+  margin: 15px 0;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.btn {
+  background: #00d1ff;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00aacc;
+}
+
+/* Technologies Section */
+.tech-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tech-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 25px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+.tech-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+.tech-item i {
+  font-size: 20px;
+}
+.tech-item:hover {
+  transform: scale(1.08);
+  background: rgba(255,255,255,0.2);
+}
+
+#tech-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #000; /* fallback */
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background: transparent;
+}
+.container, .card {
+  position: relative;
+  z-index: 2;
+}
+
